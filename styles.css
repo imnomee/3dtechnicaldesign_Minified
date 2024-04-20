@@ -507,3 +507,115 @@ p {
         padding-left: 3rem;
     }
 }
+
+/* team */
+.team-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* gap: 0.2rem; */
+}
+.team-title {
+    padding: 2rem 0;
+    margin-bottom: 0;
+}
+.team-img-container {
+    position: relative;
+    margin-bottom: 1rem;
+    background: var(--clr-primary-1);
+    flex: 0 0 100%;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+}
+.team-img {
+    transition: var(--transition);
+}
+.team-detail {
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--clr-white);
+    opacity: 0;
+    transition: var(--transition);
+    text-align: center;
+    font-family: var(--ff-secondary);
+    text-shadow: 0 5px 15px white;
+}
+.team-name {
+    /* text-decoration: underline; */
+    text-transform: capitalize;
+    margin: 1rem;
+}
+.team-img-container:hover .team-img {
+    opacity: 0.5;
+    transform: scale(1.02);
+}
+.team-img-container:hover .team-detail {
+    opacity: 1;
+}
+
+@media screen and (min-width: 572px) {
+    .team-img-container {
+        flex: 0 0 50%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .team-title {
+        padding: 4rem 0;
+    }
+    .team-img-container {
+        flex: 0 0 12.25%;
+    }
+}
+
+/* footer */
+.footer {
+    background: var(--clr-grey-1);
+    color: var(--clr-white);
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.footer-links,
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+.footer-link {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    margin-right: 1rem;
+    /* letter-spacing: var(--letter-spacing); */
+    transition: var(--transition);
+}
+
+.footer-link:hover {
+    color: var(--clr-primary-5);
+    text-decoration: underline;
+}
+
+.footer-icon {
+    font-size: 2rem;
+    margin-right: 1.2rem;
+    color: var(--clr-primary-9);
+    transition: var(--transition);
+}
+.footer-icon:hover {
+    color: var(--clr-primary-1);
+}
+
+.copyright {
+    text-transform: capitalize;
+    letter-spacing: var(--letter-spacing);
+    color: white;
+}
+.company {
+    color: var(--clr-primary-5);
+}
