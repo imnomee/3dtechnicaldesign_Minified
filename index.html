@@ -31,6 +31,54 @@
     <body>
         <header id="home">
             <!-- navbar   -->
+            <nav class="navbar">
+                <!-- nav-center is for bigger screens as flexbox container -->
+                <div class="nav-center">
+                    <div class="nav-header">
+                        <a href="#home">
+                            <img
+                                src="./images/logo.svg"
+                                alt="nav logo"
+                                class="nav-logo" />
+                        </a>
+                        <h1>3D Technical Design</h1>
+                        <button
+                            type="button"
+                            class="nav-toggle"
+                            id="nav-toggle">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                    <ul class="nav-links" id="nav-links">
+                        <li>
+                            <a href="#home" class="nav-link">home</a>
+                            <a href="#about" class="nav-link">who we are</a>
+                            <a href="#services" class="nav-link">services</a>
+                            <a href="#studies" class="nav-link">case studies</a>
+                            <a href="#team" class="nav-link">meet the team</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-icons">
+                        <li>
+                            <a
+                                class="nav-icon"
+                                href="https://www.linkedin.com/company/3d-technical-design-ltd/">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a
+                                class="nav-icon"
+                                href="https://twitter.com/3d_technical">
+                                <i class="fa-brands fa-square-x-twitter"></i>
+                            </a>
+                            <a
+                                class="nav-icon"
+                                href="https://www.youtube.com/channel/UC47zaSz39vshl6M3mOeiHIA">
+                                <i class="fa-brands fa-square-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             <!-- hero     -->
             <div class="hero">
                 <div class="hero-banner">
@@ -430,9 +478,10 @@
             </ul>
             <p class="copyright">
                 <span class="company">3D Technical Design Ltd</span> &copy;
-                Copyright 2024<br />
+                Copyright <span id="date">2024</span><br />
                 Company Reg No: 02683933.<br />VAT Reg No: 987787033
             </p>
         </footer>
+        <script src="./app.js"></script>
     </body>
 </html>
