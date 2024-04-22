@@ -111,7 +111,7 @@ p {
     color: var(--clr-primary-5);
 }
 .section-center {
-    width: 90vw;
+    width: 100%;
     margin: 0 auto;
     max-width: 992px;
 }
@@ -206,7 +206,9 @@ p {
     height: 2.3rem;
 }
 .nav-header h1 {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    width: auto;
+    text-align: center;
 }
 .nav-links {
     height: 0;
@@ -220,6 +222,9 @@ html {
     scroll-behavior: smooth;
 }
 @media screen and (min-width: 992px) {
+    .nav-header h1 {
+        display: none;
+    }
     .nav-center {
         max-width: 90vw;
         display: flex;
@@ -278,16 +283,17 @@ html {
     align-items: center;
 }
 .hero-banner {
+    width: 100%;
     text-align: center;
     color: var(--clr-white);
-    padding: 0 3rem;
+    padding: 0 1rem;
     margin-top: 3rem;
 }
 .hero-banner h1 {
     text-transform: uppercase;
     line-height: 1;
     margin-bottom: 1rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .hero-banner p {
     max-width: 40rem;
@@ -319,7 +325,7 @@ html {
     }
     .hero-banner h1 {
         font-size: 3rem;
-        max-width: 50rem;
+        text-align: center;
     }
     .hero-banner p {
         font-size: 1.25rem;
@@ -567,6 +573,8 @@ html {
 .contact-title {
     color: var(--clr-white);
     text-align: center;
+    margin-bottom: 1rem;
+    letter-spacing: normal;
 }
 .contact-form {
     display: flex;
@@ -581,7 +589,7 @@ html {
 .form-control,
 .btn-submit {
     padding: 0.375rem 0.7rem;
-    font-size: 1rem;
+    font-size: 0.75rem;
     line-height: 1.5;
     font-weight: 300;
     letter-spacing: var(--letter-spacing);
@@ -607,12 +615,18 @@ html {
     color: var(--clr-primary-9);
 }
 
+.contact-center {
+    max-width: 90%;
+}
+
 @media screen and (min-width: 992px) {
     .contact-center {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 1rem;
         max-width: 90vw;
+        text-align: center;
     }
     .contact-form {
         align-self: flex-end;
