@@ -5,8 +5,6 @@ const links = document.getElementById('nav-links');
 const link = document.querySelectorAll('.nav-link');
 
 navBtn.addEventListener('click', () => {
-    console.log(links);
-    console.log('clicked');
     links.classList.toggle('show-links');
 });
 
